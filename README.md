@@ -6,6 +6,7 @@ usando HTML, CSS e JavaScript.</p>
 <p>É uma aplicação simples, apesar de não possuir muitos recursos visuais o principal objetivo dessa aplicação é consolidar de forma prática os conhecimentos 
 em <strong>JAVASCRIPT.</strong></p>
 
+<p>Acesse o porjeto: https://joseweverton.github.io/toDo_List/</p>
 <h3>Funcionalidades</h3>
   
 <ul>
