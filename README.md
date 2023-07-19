@@ -1,4 +1,4 @@
-# to Do List
+# to Do List 👨‍💻
 
 <p>Este é um projeto de To-Do List (lista de tarefas) que permite aos usuários criar e gerenciar suas tarefas de forma eficiente. A aplicação foi desenvolvida 
 usando HTML, CSS e JavaScript.</p>
@@ -14,3 +14,9 @@ em <strong>JAVASCRIPT.</strong></p>
   <li>Excluir tarefas: As tarefas concluídas ou indesejadas podem ser excluídas da lista.</li>
   <li>Visualizar todas as tarefas: Os usuários podem ver todas as tarefas em uma única lista, facilitando a visualização e a organização.</li>
 </ul>
+
+<h3>Contribuições</h3>
+
+<p>O projeto faz parte do meu desenvolvimento acadêmico e, à medida que evolui, vou adicionando mais recursos. Venho compartilhando os projetos no GitHub para evidenciar, na prática, os conhecimentos em tecnologias de front-end.</p>
+
+<p>Fiquem avontadem em contribuir e promover sujestões 💪😊😜</p>
