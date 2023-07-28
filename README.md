@@ -20,4 +20,4 @@ em <strong>JAVASCRIPT.</strong></p>
 
 <p>O projeto faz parte do meu desenvolvimento acadêmico e, à medida que evolui, vou adicionando mais recursos. Venho compartilhando os projetos no GitHub para evidenciar, na prática, os conhecimentos em tecnologias de front-end.</p>
 
-<p>Fiquem à vontade em contribuir e promover sujestões 💪😊😜</p>
+<p>Fiquem à vontade em contribuir e promover sujestões 💪😊😜🚀</p>
