@@ -3,10 +3,9 @@
 ## ℹ️ Sobre o Projeto
 To-Do List que permite o usuário gerenciar tarefas.
 
-Aplicação simples que visa consolidar conhecimentos em `JavaScript` e `manipulação na DOM`.
+Aplicação simples que visa consolidar conhecimentos em `JavaScript` e `manipulação na DOM`. As novas tarefas inseridas fiam armazenado em memória.
 
-🔗 Acesse o Projeto Finalizado: 
-
+🔗 Acesse o Projeto Finalizado: https://joseweverton.github.io/toDo_List
 
 ## 🛠️ Tecnologias Utilizadas
 - HTML5
@@ -14,7 +13,6 @@ Aplicação simples que visa consolidar conhecimentos em `JavaScript` e `manipul
 - JavaScript
 
 <h2>🚀 Funcionalidades</h2>
-
 
 #### Adicionar nova tarefa:
 
