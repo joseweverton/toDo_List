@@ -16,16 +16,55 @@
     <header class="header-bg">
         <div class="header">
             <a href="#">&#x1F4DD; Lista de Tarefas</a>
+            <button class="button-reset-checks">Reset Checks</button>
         </div>
     </header>
 
     <main class="container-bg">
         <div class="container">
             <input class="input-task" placeholder="O que tenho que fazer..." />
+            <select class="select-periodicity">
+                <option value="">Selecione a periodicidade</option>
+                <option value="diario">Diário</option>
+                <option value="semana1">Semana 1 (01–10)</option>
+                <option value="semana2">Semana 2 (11–17)</option>
+                <option value="semana3">Semana 3 (18–24)</option>
+                <option value="semana4">Semana 4 (25–31)</option>
+                <option value="mensal">Mensal</option>
+            </select>
             <button class="button-add-task">Adicionar</button>
         </div>
-        <section class="container-tesk">
-            <ul class="list-tasks"></ul>
+
+        <section class="boards-container">
+            <div class="boards-row boards-row-top">
+                <div class="board-container">
+                    <h2>Diário</h2>
+                    <ul class="list-tasks" data-periodicity="diario"></ul>
+                </div>
+                <div class="board-container">
+                    <h2>Mensal</h2>
+                    <ul class="list-tasks" data-periodicity="mensal"></ul>
+                </div>
+            </div>
+
+            <div class="boards-row boards-row-bottom">
+                <div class="board-container">
+                    <h2>Semana 1 (01–10)</h2>
+                    <ul class="list-tasks" data-periodicity="semana1"></ul>
+                </div>
+                <div class="board-container">
+                    <h2>Semana 2 (11–17)</h2>
+                    <ul class="list-tasks" data-periodicity="semana2"></ul>
+                </div>
+                <div class="board-container">
+                    <h2>Semana 3 (18–24)</h2>
+                    <ul class="list-tasks" data-periodicity="semana3"></ul>
+                </div>
+                <div class="board-container">
+                    <h2>Semana 4 (25–31)</h2>
+                    <ul class="list-tasks" data-periodicity="semana4"></ul>
+                </div>
+            </div>
         </section>
     </main>
 </body>

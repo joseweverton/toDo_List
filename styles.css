@@ -10,36 +10,89 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   background-color: #111111;
   background-size: cover;
   min-height: 100vh;
 }
-.header {
-  background-color: #000000;
-  text-align: center;
-  padding: 20px;
 
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  padding: 20px;
 }
+
 .header a {
   color: #ffffff;
   font: 400 1.5rem/1.5 "Poppins", sans-serif;
 }
+
+.button-reset-checks {
+  position: absolute;
+  right: 20px;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #176585;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 0 15px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  transition: opacity 0.2s;
+}
+
+.button-reset-checks:hover {
+  opacity: 0.8;
+}
+
+.button-reset-checks:active {
+  opacity: 0.6;
+}
+
 .container-bg {
   background-color: #d1d1d1;
-  width: 500px;
+  width: 95%;
+  max-width: 1200px;
   border-radius: 10px;
   padding: 20px;
-  margin: 40px auto; /* top lafet-rigth botton*/
+  margin: 40px auto;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
 .input-task {
   border: none;
   border-radius: 5px;
-  width: 300px;
+  flex: 1;
+  min-width: 180px;
   height: 40px;
   padding-left: 10px;
   font-size: 15px;
 }
+
+.select-periodicity {
+  border: none;
+  border-radius: 5px;
+  min-width: 200px;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 15px;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+}
+
 .button-add-task {
   border: none;
   border-radius: 5px;
@@ -47,44 +100,123 @@ body {
   background-color: #176585;
   color: #ffffff;
   font-size: 17px;
-  padding: 0 15px; /* 0 = top-botton 15px = left-right*/
-  float: right;
+  padding: 0 15px;
   cursor: pointer;
   font-weight: 700;
 }
+
 .button-add-task:hover {
   opacity: 0.8;
 }
+
 .button-add-task:active {
   opacity: 0.6;
 }
-.container-tesk {
-  background-color: #d1d1d1;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 40px auto 0; /* top lafet-rigth botton*/
+
+.boards-container {
+  margin-top: 40px;
 }
+
+.boards-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.boards-row:last-child {
+  margin-bottom: 0;
+}
+
+.board-container {
+  background-color: #c4c4c4;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.board-container h2 {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #176585;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
 .task {
   background-color: #f2f2f2;
-  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2); /*colocaum sombrado*/
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
   min-height: 50px;
-  height: 100%;
   display: flex;
-  align-items: center; /*alinha ao centro na horizontal*/
-  justify-content: space-between; /*espacamento entre os icones*/
-  padding: 0 15px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 15px;
   border-radius: 5px;
-  margin-bottom: 20px; /*distancia as li*/
+  margin-bottom: 20px;
   cursor: pointer;
 }
+
 .list-tasks p {
   color: rebeccapurple;
-  max-width: 300px;
+  font-size: 12px;
+  line-height: 1.4;
+  flex: 1;
+  min-width: 0;
   word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon span {
+  cursor: pointer;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
 .done {
   background-color: #8fac55;
 }
+
 .done p {
   text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .button-reset-checks {
+    position: static;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-task,
+  .select-periodicity,
+  .button-add-task {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .boards-row {
+    grid-template-columns: 1fr;
+  }
 }
