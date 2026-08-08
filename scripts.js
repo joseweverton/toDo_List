@@ -3,6 +3,8 @@ const resetChecksButton = document.querySelector(".button-reset-checks");
 const input = document.querySelector(".input-task");
 const select = document.querySelector(".select-periodicity");
 const listContainers = document.querySelectorAll(".list-tasks");
+const toggleBoards = document.querySelectorAll(".toggle-board");
+
 
 let listItems = [];
 let editingIndex = -1;
@@ -142,6 +144,32 @@ const reflashList = () => {
 
     return taskShow();
 };
+
+toggleBoards.forEach((toggleButton) => {
+    toggleButton.addEventListener("click", () => {
+
+        const board = toggleButton.closest(".board-container");
+        const title = board.querySelector("h2").textContent;
+
+        const collapsed = board.classList.toggle("collapsed");
+
+        toggleButton.setAttribute("aria-expanded", !collapsed);
+
+        if (collapsed) {
+            toggleButton.textContent = "▼";
+            toggleButton.setAttribute(
+                "aria-label",
+                `Expandir ${title}`
+            );
+        } else {
+            toggleButton.textContent = "▲";
+            toggleButton.setAttribute(
+                "aria-label",
+                `Recolher ${title}`
+            );
+        }
+    });
+});
 
 reflashList();
 

@@ -120,6 +120,7 @@ body {
 .boards-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
   gap: 15px;
   margin-bottom: 15px;
 }
@@ -142,6 +143,42 @@ body {
   font-weight: 600;
   line-height: 1.3;
 }
+
+
+.board-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.board-header h2 {
+  margin: 0;
+}
+
+.toggle-board {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+.list-tasks {
+  overflow: hidden;
+  max-height: 2000px;
+  opacity: 1;
+  transition: max-height 0.3s ease, opacity 0.2s ease;
+}
+
+.board-container.collapsed .list-tasks {
+  max-height: 0;
+  opacity: 0;
+}
+
+
+
+
 
 .task {
   background-color: #f2f2f2;
