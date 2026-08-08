@@ -66,6 +66,16 @@ const buildTaskHtml = (item, index) => {
 };
 
 const taskShow = () => {
+    listItems.sort((a, b) =>
+        a.descricao.localeCompare(
+            b.descricao,
+            "pt-BR",
+            {
+                numeric: true,
+                sensitivity: "base"
+            }
+        )
+    );
     const groupedHtml = {};
 
     listContainers.forEach((container) => {
